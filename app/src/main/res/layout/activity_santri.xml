@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="?attr/catalogToolbarWithCloseButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/teal_200"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:title="Data Santri"
+                app:titleTextColor="@color/Titele_AA_Light" />
+
+
+            <ImageView
+                android:id="@+id/imgfilter"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_filter" />
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appbarlayout"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvsantri"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/item_santri" />
+
+            </androidx.core.widget.NestedScrollView>
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.FoldingCube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

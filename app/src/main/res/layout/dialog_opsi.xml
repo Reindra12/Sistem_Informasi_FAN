@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_dialog_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/nemosofts_dialog"
+        android:backgroundTint="@color/black"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Success!"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dialog_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dialog_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Apakah Kamu Yakin Ingin Menghapus ."
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@+id/tv_dialog_msg"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/Boder_Night" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dialog_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/nemosofts_dialog"
+                android:backgroundTint="#3BB54A"
+                android:padding="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="TIDAK"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_dialog_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/nemosofts_dialog"
+                android:backgroundTint="#3BB54A"
+                android:padding="10dp"
+                android:paddingBottom="5dp"
+
+                android:text="YA"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_dialog_img"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-45dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_success"
+        app:riv_border_color="@color/black"
+        app:riv_border_width="4dp"
+        app:riv_corner_radius="60dp" />
+
+</RelativeLayout>

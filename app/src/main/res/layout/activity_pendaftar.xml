@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="Pendaftaran" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/postView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <include layout="@layout/add_img" />
+
+
+                    <!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_marginStart="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:text="Add Photo"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:textSize="15dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                       &ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_height="wrap_content"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:textSize="13dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_marginStart="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:text="First picture - is tha title picture"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:textColor="?attr/Titel_2"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;                    <include layout="@layout/add_img"/>&ndash;&gt;-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:textSize="13dp"-->
+                    <!--                        android:layout_marginStart="10dp"-->
+                    <!--                        android:text="Supported formats are .jpg and .png"-->
+                    <!--                        android:textColor="?attr/Titel_2"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"/>-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:textSize="13dp"-->
+                    <!--                        android:layout_marginStart="10dp"-->
+                    <!--                        android:text="Each picture must nit exceed 5Mb"-->
+                    <!--                        android:textColor="?attr/Titel_2"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"/>-->
+
+
+                    <!--                    <View-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="1dp"-->
+                    <!--                        android:layout_margin="10dp"-->
+                    <!--                        android:background="?attr/Boder" />-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:layout_margin="10dp"-->
+                    <!--                        android:fontFamily="@font/bariol_bold"-->
+                    <!--                        android:text=" Foto Calon Santri"-->
+                    <!--                        android:textColor="@color/black" />-->
+
+                    <!--                    <com.makeramen.roundedimageview.RoundedImageView-->
+                    <!--                        android:id="@+id/imgcalonsantri"-->
+                    <!--                        android:layout_width="100dp"-->
+                    <!--                        android:layout_height="100dp"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:layout_marginStart="10dp"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:layout_marginBottom="10dp"-->
+                    <!--                        android:scaleType="centerCrop"-->
+                    <!--                        android:src="@drawable/ic_photo"-->
+                    <!--                        app:riv_corner_radius="5dp" />-->
+
+                    <EditText
+                        android:id="@+id/et_namasantri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Nama Lengkap"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/et_tempatlahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Tempat Lahir"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/et_tanggallahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Tanggal Lahir (tgl-bulan-tahun)"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+
+                    <!--                    <EditText-->
+                    <!--                        android:id="@+id/et_tempatlahir"-->
+                    <!--                        android:layout_marginTop="15dp"-->
+                    <!--                        android:layout_marginStart="20dp"-->
+                    <!--                        android:layout_marginEnd="20dp"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:minLines="5"-->
+                    <!--                        android:maxLines="10"-->
+                    <!--                        android:gravity="top"-->
+                    <!--                        android:padding="12dp"-->
+                    <!--                        android:hint="Enter your text here"-->
+                    <!--                        android:textSize="14sp"-->
+                    <!--                        android:background="@drawable/bg_round_border"-->
+                    <!--                        tools:ignore="Autofill,TextFields" />-->
+
+                    <!--                    untuk nomor hp-->
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_marginTop="15dp"-->
+                    <!--                        android:layout_marginStart="20dp"-->
+                    <!--                        android:layout_marginEnd="20dp"-->
+                    <!--                        android:orientation="horizontal"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content">-->
+                    <!--                        <EditText-->
+                    <!--                            android:id="@+id/editText_phone_1"-->
+                    <!--                            android:layout_marginEnd="20dp"-->
+                    <!--                            android:layout_width="0dp"-->
+                    <!--                            android:layout_weight="50"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:background="@drawable/bg_round_border"-->
+                    <!--                            android:backgroundTint="?Boder"-->
+                    <!--                            android:textColor="?Titel_1"-->
+                    <!--                            android:inputType="phone"-->
+                    <!--                            android:gravity="top"-->
+                    <!--                            android:hint="Phone Number A"-->
+                    <!--                            android:maxLines="1"-->
+                    <!--                            android:padding="12dp"-->
+                    <!--                            android:textSize="14sp"-->
+                    <!--                            tools:ignore="Autofill" />-->
+
+                    <!--                        <EditText-->
+                    <!--                            android:id="@+id/editText_phone_2"-->
+                    <!--                            android:layout_width="0dp"-->
+                    <!--                            android:layout_weight="50"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:background="@drawable/bg_round_border"-->
+                    <!--                            android:backgroundTint="?Boder"-->
+                    <!--                            android:textColor="?Titel_1"-->
+                    <!--                            android:gravity="top"-->
+                    <!--                            android:hint="Phone Number B"-->
+                    <!--                            android:maxLines="1"-->
+                    <!--                            android:inputType="phone"-->
+                    <!--                            android:padding="12dp"-->
+                    <!--                            android:textSize="14sp"-->
+                    <!--                            tools:ignore="Autofill" />-->
+
+                    <!--                    </LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="2">
+
+                            <Spinner
+                                android:id="@+id/sp_jeniskelamin"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_round_border"
+                                android:entries="@array/list_jk"
+                                android:padding="10dp" />
+
+                            <Spinner
+                                android:id="@+id/sptinggal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_round_border"
+                                android:entries="@array/list_tinggal"
+                                android:padding="10dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="2">
+
+                            <Spinner
+                                android:id="@+id/sppendidikan"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_round_border"
+                                android:entries="@array/list_pendidikan"
+                                android:padding="10dp" />
+
+                            <Spinner
+                                android:id="@+id/spmondok"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_round_border"
+                                android:entries="@array/list_pernahmondok"
+                                android:padding="10dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativepondok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/et_namapondok"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bg_round_border"
+                            android:gravity="top"
+                            android:hint="Nama Pondok"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="12dp"
+                            android:textSize="14sp"
+                            tools:ignore="Autofill" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_anak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Anak Keberapa"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/et_saudara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Dari Berapa Saudara"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="IDENTITAS ORANG TUA / WALI"
+                        android:textColor="@color/black" />
+
+
+                    <EditText
+                        android:id="@+id/et_namawali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Nama Lengkap"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/et_ttl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Tempat, Tanggal Lahir"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+
+                    <EditText
+                        android:id="@+id/et_pekerjaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Pekerjaan"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text=" Lengkapi Sesuai KTP"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_provinsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Provinsi"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/et_kabupaten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Kabupaten"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/et_kecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Kecamatan"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+
+                    <EditText
+                        android:id="@+id/et_desa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Nama Desa / Kelurahan"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+
+                    <EditText
+                        android:id="@+id/et_rtrw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="RT/RW"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+
+                    <EditText
+                        android:id="@+id/et_nohpwali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bg_round_border"
+                        android:gravity="top"
+                        android:hint="Nomor Hp"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btndaftarsantri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/post_button"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:text="Daftar"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.FoldingCube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent" />
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable-v24/abs_history_playlist.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable-v24/background_filter_active.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable-v24/capsule_gradient.xml" value="0.22135416666666666" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable-v24/capsule_putih.xml" value="0.22135416666666666" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable-v24/capsule_putih_border.xml" value="0.22135416666666666" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/background_dialog.xml" value="0.22083333333333333" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/background_filter_active.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/background_filter_deactive.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/bg_round_border.xml" value="0.22083333333333333" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/bg_view.xml" value="0.33203125" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/card_normal.xml" value="0.22552083333333334" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/cardmy_sh.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/centre_background.xml" value="0.22083333333333333" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/centre_button.xml" value="0.22083333333333333" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/dialog_bg.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/ic_close.xml" value="0.22552083333333334" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/ic_favorite_red_24dp.xml" value="0.21614583333333334" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/ic_filter.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/ic_keyboard_arrow_up_black_24dp.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/ic_logout.xml" value="0.22552083333333334" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/ic_photo.xml" value="0.22083333333333333" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/ic_success.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/ic_warning.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/drawable/nemosofts_dialog.xml" value="0.1954954954954955" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_album.xml" value="0.12960526315789472" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_beranda.xml" value="0.12960526315789472" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_beranda2.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_berita.xml" value="0.18153153153153154" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_berita_dashboard.xml" value="0.2875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_bottom_bar.xml" value="0.2" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_coba_upload.xml" value="0.3078125" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_daftar_online.xml" value="0.20520833333333333" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_detail_berita.xml" value="0.25" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_detail_santri.xml" value="0.32348111658456485" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_full_display_image.xml" value="0.18153153153153154" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_informasi.xml" value="0.5" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_login_admin.xml" value="0.31484375" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_pembayaran.xml" value="0.18153153153153154" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_pendaftar.xml" value="0.22" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_pendaftaran.xml" value="0.20520833333333333" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_provinsi.xml" value="0.25" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_register.xml" value="0.18153153153153154" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_santri.xml" value="0.18" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/activity_upload.xml" value="0.20520833333333333" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/add_img.xml" value="0.33" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/bottom_sheet.xml" value="0.18153153153153154" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/camera_dialog.xml" value="0.209375" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/dialog_flter_sort.xml" value="0.22" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/dialog_opsi.xml" value="0.33" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/fragment_berita.xml" value="0.11639492753623189" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_alamat.xml" value="0.18153153153153154" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_album.xml" value="0.5" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_berita.xml" value="0.18153153153153154" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_beritadashboard.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_card.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_daftaronline.xml" value="0.209375" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_informasi.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_isi_album.xml" value="0.3078125" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_pager_card.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_pendaftar.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_pendaftaran.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_popular_course.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_popular_course_playing.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_santri.xml" value="0.18153153153153154" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/item_shop_card.xml" value="0.209375" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/nav_header_main.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/nemosofts_dialog.xml" value="0.25" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/update_notification.xml" value="0.2046875" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/layout/view_custom.xml" value="0.209375" />
+        <entry key="..\:/MyRepository/SISTEM_INFORMASI/app/src/main/res/xml/file_paths.xml" value="0.2046875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

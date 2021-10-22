@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llalbum"
+    app:cardCornerRadius="5dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:background="@drawable/bg_round_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/v_top_ad_post"
+        android:background="#330091EA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/v_speed_post"
+        android:background="#40FFD600"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgalbum"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a"
+            app:riv_corner_radius="5dp" />
+
+        <TextView
+            android:id="@+id/tvjudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgalbum"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:maxLines="2"
+            android:minLines="1"
+            android:text="@string/app_name"
+            android:textAlignment="viewStart"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_below="@id/itme_post_text"-->
+        <!--            android:id="@+id/pin"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_marginStart="5dp"-->
+        <!--                android:id="@+id/id_pin"-->
+        <!--                android:src="@drawable/ic_pin"-->
+        <!--                android:layout_width="15dp"-->
+        <!--                android:layout_height="20dp"-->
+        <!--                app:tint="?Titel_2" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/itme_post_city"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="5dp"-->
+        <!--                android:layout_toEndOf="@+id/id_pin"-->
+        <!--                android:text="Jaffna"-->
+        <!--                android:textAlignment="viewStart"-->
+        <!--                android:textColor="?Titel_2"-->
+        <!--                android:textSize="14sp" />-->
+
+
+        <!--        </RelativeLayout>-->
+
+
+<!--        <TextView-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:gravity="bottom"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_below="@id/tvjudul"-->
+<!--            android:id="@+id/itme_post_pri"-->
+<!--            android:text="60000"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <ImageView-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/tv_top_ad_post"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/b"-->
+<!--            android:layout_alignBottom="@+id/itme_post_pri"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="5dp" />-->
+
+        <!--        <ImageView-->
+        <!--            android:visibility="gone"-->
+        <!--            android:id="@+id/tv_speed_post"-->
+        <!--            android:layout_width="30dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:src="@drawable/ic_speed"-->
+        <!--            android:layout_alignBottom="@+id/itme_post_pri"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_marginEnd="5dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/itme_post_date"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignBottom="@+id/itme_post_pri"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:text="4 hours ago"-->
+<!--            android:textAlignment="textEnd"-->
+<!--            android:textColor="@color/Titele_AA_Light"-->
+<!--            android:textSize="12sp" />-->
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

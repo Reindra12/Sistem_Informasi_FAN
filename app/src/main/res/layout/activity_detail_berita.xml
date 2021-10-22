@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress"-->
+<!--        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:indeterminate="true"-->
+<!--        android:visibility="invisible" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="360dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:id="@+id/imgdetail"
+                    android:scaleType="centerCrop"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvjudul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="@font/calibri"
+                            android:text="Cactus"
+                            android:textColor="#000000"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#dedede" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diskripsi"
+
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="5dp"
+                android:textColor="#2196F3"
+                android:fontFamily="@font/calibri"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="in addition to being a decoration, cactus can also be a health benefit, let's buy cactus in our store because now discount 30%"
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/tvketerangan"
+                android:textColor="#444444"
+                android:fontFamily="@font/calibri"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

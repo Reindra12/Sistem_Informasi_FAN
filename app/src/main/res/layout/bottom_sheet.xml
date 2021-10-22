@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/choosetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Choose"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/layoutEdit"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/search2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/toolbar_search"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/cardmy_sh"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text|textAutoComplete"
+                    android:textColor="@color/Titele_AA_Light"
+                    android:textColorHint="@color/Titele_A_Light" />
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_search" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/search2"
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_alamat"
+            android:layout_above="@+id/adView_radio" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_load"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView_radio"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+            android:tint="#FFFFFF"
+            android:visibility="invisible"
+            app:fabSize="normal"
+            tools:ignore="ContentDescription" />
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/fl_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="?attr/actionBarSize" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:id="@+id/adView_radio"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

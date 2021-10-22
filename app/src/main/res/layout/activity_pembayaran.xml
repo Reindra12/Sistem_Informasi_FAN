@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2193b0"
+    tools:context=".pembayaran.PembayaranActivity">
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.FoldingCube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/rvdetailpembayansantri"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rvdetailpembayansantri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/capsule_putih"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bariol_bold"
+                android:text="Menunggu Pembayaran"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvkodepembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_status"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/audiowideregular"
+                android:gravity="center"
+                android:text="Muhammad Sa'roni"
+                android:textColor="@color/Titele_AA_Light"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvkodepembayaran"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvkodepembayaran"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/bariol_bold"
+                android:gravity="center"
+                android:text="ABDURROZAQ"
+                android:textColor="@color/Titele_AA_Light"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvalamatsantri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_nama"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/bariol_bold"
+                android:gravity="center"
+                android:text="Paiton"
+                android:textColor="@color/Titele_AA_Light"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_nomorhp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvalamatsantri"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/bariol_bold"
+                android:gravity="center"
+                android:text="08212345678"
+                android:textColor="@color/Titele_AA_Light"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/btn_detailtosantri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_nomorhp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/capsule_gradient"
+                android:text="DETAIL"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativepembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="8dp"
+
+            android:background="@drawable/capsule_putih"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvdetailpembayansantri">
+
+            <RelativeLayout
+                android:id="@+id/rlrekening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_jumlah"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/capsule_putih_border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_rekening" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_nomorrekeingponpes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_jumlah"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="BNI"
+                            android:textColor="@color/Titele_AA_Light"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_jumlah"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="ABDUR ROZAQ"
+                            android:textColor="@color/Titele_AA_Light"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_jumlah"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/bariol_bold"
+                            android:text="0826459818"
+                            android:textColor="@color/Titele_AA_Light"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_biaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bariol_bold"
+                android:text="Biaya Pembayaran"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_jumlah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_biaya"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/bariol_bold"
+                android:gravity="center"
+                android:text="Rp. 300.000"
+                android:textColor="@color/Titele_AA_Light"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:id="@+id/tvketerangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlrekening"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/bariol_bold"
+                android:justificationMode="inter_word"
+                android:text="@string/keteranganpembayaran"
+                android:textColor="@color/Titele_AA_Light"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvketerangan"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:id="@+id/et_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:hint="BANK PENGIRIM"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textinput1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:id="@+id/et_namaakun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="NAMA AKUN "
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textinput2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:id="@+id/et_nomorrekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=" NOMOR REKENING "
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textinput3"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:id="@+id/et_jumlahpembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=" JUMLAH PEMBAYARAN "
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textinput4"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/capsule_gradient"
+                android:text="UPLOAD BUKTI"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativesudahbayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/capsule_putih"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvdetailpembayansantri">
+
+            <RelativeLayout
+                android:id="@+id/rlbukti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/biaya"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/capsule_putih_border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imgbuktipembayaran"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_rekening" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/biaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bariol_bold"
+                android:text="Biaya Pembayaran"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlbukti"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:id="@+id/et_bank1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint="BANK PENGIRIM"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textinput11"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:id="@+id/et_namaakun1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint="NAMA AKUN "
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textinput22"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:id="@+id/et_nomorrekening1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint=" NOMOR REKENING "
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textinput33"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:id="@+id/et_jumlahpembayaran1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint=" JUMLAH PEMBAYARAN "
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_upload1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textinput44"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/capsule_gradient"
+                android:text="KONFIRMASI"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    <!--    </androidx.core.widget.NestedScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

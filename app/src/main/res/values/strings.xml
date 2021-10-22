@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">SISTEM_INFORMASI</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="likes">Favorite</string>
+    <string name="notification">Notification</string>
+    <string name="profile">profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pilih_gambar">Pilih Gambar</string>
+    <string name="keteranganpembayaran">Silahkan transfer biaya pendaftaran pada rekening di atas dan sertakan kode pendaftaran pada informasi transfer anda.</string>
+    <string name="psb">PENERIMAAN SANTRI BARU (PSB) PONDOK PESANTREN AL - IFADAH </string>
+    <string name="kota">KECAMATAN WULUHAN, DESA GLUNDENGAN TAHUN PELAJARAN 2021/2022</string>
+    <string name="bayar">1. Membayar biaya pendaftaran sebesar Rp. 300.000</string>
+    <string name="mengisi">2. Mengisi formulis pendaftaran</string>
+    <string name="menyerahkan">3. Menyerahkan 1 lembar foto ukuran 3 x 4 cm</string>
+    <string name="fotokopi">4. Menyerahkan fotokopi akta kelahiran, KK, dan KTP kedua orang tua</string>
+    <string name="test">5. Menyerahkan fotokopi rapor kelas 4-6 (SD). untuk calon siswa SMP </string>
+    <string name="pendaftaran">1. Untuk waktu pendaftaran BEBAS (ONLINE)</string>
+    <string name="pendaftaranoffline">2. Pendaftaran offline dilayani setiap hari mulai pukul 07.00 - 10.00 WIB,.</string>
+    <string name="kecuali">kecuali hari jumat libur</string>
+    <string name="unduh">a. Unduh dan pasang aplikasi \"SIMANIS AL - IFADAH\" dari Google Play Store (Android)</string>
+    <string name="masukmenu">b. Masuk ke menu Profil</string>
+    <string name="loading">Silahkan Tunggu</string>
+
+    <string-array name="list_jk">
+        <item>Pilih Jenis Kelamin</item>
+        <item>Laki - Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="list_pendidikan">
+        <item>Pilih Pendidikan Terakhir</item>
+        <item>MI/SD</item>
+        <item>SMP/MTs</item>
+        <item>SMA/SMK/MA</item>
+
+    </string-array>
+
+    <string-array name="list_pernahmondok">
+        <item>Apakah Pernah Mondok?</item>
+        <item>YA</item>
+        <item>TIDAK</item>
+
+    </string-array>
+
+    <string-array name="list_tinggal">
+        <item>Tinggal Bersama</item>
+        <item>Wali </item>
+        <item>Orang Tua</item>
+        <item>Saudara</item>
+    </string-array>
+
+</resources>

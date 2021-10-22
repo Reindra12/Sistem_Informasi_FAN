@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgcalonsantri"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo"
+                app:riv_corner_radius="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgcalonsantri"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bariol_bold"
+                android:gravity="center"
+                android:text=" Foto Santri"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:indeterminateTint="#FF1744"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/add_2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo"
+                app:riv_corner_radius="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_2"
+                android:fontFamily="@font/bariol_bold"
+                android:gravity="center"
+                android:text=" Foto Ijazah"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:indeterminateTint="#FF1744"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/add_3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo"
+                app:riv_corner_radius="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_3"
+                android:fontFamily="@font/bariol_bold"
+                android:gravity="center"
+                android:text=" Foto KK"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:indeterminateTint="#FF1744"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/add_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_photo"
+                app:riv_corner_radius="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_4"
+                android:fontFamily="@font/bariol_bold"
+                android:gravity="center"
+                android:text=" KTP WALI"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:indeterminateTint="#FF1744"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
